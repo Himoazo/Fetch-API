@@ -1,2 +1,148 @@
+* {
+  margin: 0;
+}
 
+header {
+  background-color: #771818;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 0;
+  padding: 0 1em;
+  display: flex;
+  position: relative;
+}
+
+.logo a {
+  color: #fff;
+  margin: 0;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #771818;
+  width: 250px;
+  height: 100vh;
+  font-size: 1.4em;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 10px #000000b5;
+}
+
+nav ul {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  width: 100%;
+  padding: .8em 0;
+}
+
+nav a {
+  color: #fff;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background-color: #5e0f0f;
+}
+
+.menu-btn {
+  cursor: pointer;
+  background-color: #771818;
+  border: 2px solid #fff;
+  align-items: center;
+  padding: 8px 15px;
+  display: flex;
+}
+
+.open {
+  margin: 0 1em;
+}
+
+.menu-btn:hover {
+  background-color: #5e0f0f;
+  box-shadow: 0 0 5px #0000006b;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.bars {
+  background-color: #fff;
+  width: 20px;
+  height: 3px;
+  margin: 5px 0;
+  display: block;
+}
+
+.menu-text {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.close {
+  margin: 1em 1.5em;
+  padding: 10px 15px;
+}
+
+.cross1 {
+  width: 25px;
+  position: relative;
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.cross2 {
+  width: 25px;
+  position: relative;
+  top: -3px;
+  transform: rotate(135deg);
+}
+
+@media only screen and (width >= 992px) {
+  header {
+    padding: 0 3em;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  #open-menu {
+    display: none !important;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav {
+    width: auto;
+    height: auto;
+    font-size: 1.4em;
+    position: static;
+    box-shadow: 0 0;
+    display: block !important;
+  }
+
+  nav ul {
+    height: 100%;
+  }
+
+  nav li {
+    padding: 1.2em 0;
+    display: inline;
+  }
+}
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
