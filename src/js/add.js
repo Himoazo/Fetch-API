@@ -18,7 +18,7 @@ addBtn.addEventListener("click", (event)=>{
     if(companyname && jobtitle && location && startdate){
         postData(companyname, jobtitle, location, startdate, enddate);
     }else{
-
+        document.getElementById("printed").textContent = "Alla fält markerade med '*' måste fyllas i"
     }
 });
 

@@ -11,7 +11,6 @@ async function fetchData() {
         for(let entry of experience){
             let id = entry.id;
             const tr = document.createElement("tr");
-            /* tr.contentEditable = true; */
             tr.classList.add("exp");
             const td1 = document.createElement("td");
             td1.classList.add(id);
@@ -28,32 +27,38 @@ async function fetchData() {
             const td4 = document.createElement("td");
             td4.classList.add(id);
             td4.contentEditable = true;
-            td4.textContent = entry.startdate;
+            td4.textContent = new Date(entry.startdate).toLocaleDateString();
             const td5 = document.createElement("td");
             td5.classList.add(id);
             if(entry.enddate == "1899-11-29T23:00:00.000Z"){
                 td5.textContent = "Pågående";
             }else{
-                td5.textContent = entry.enddate;
+                td5.textContent = new Date(entry.enddate).toLocaleDateString();
             }
             td5.contentEditable = true;
             const deleteBtn = document.createElement("button");
+            deleteBtn.id = "delBtn";
             deleteBtn.textContent = "Delete";
             deleteBtn.addEventListener("click", ()=>{
                 deleteEntry(id);
             });
+            const td6 = document.createElement("td");
+            td6.appendChild(deleteBtn);
             const editBtn = document.createElement("button");
+            editBtn.id = "editBtn";
             editBtn.textContent = "Edit";
             editBtn.addEventListener("click", ()=>{
                 editEntry(id);
             });
+            const td7 = document.createElement("td");
+            td7.appendChild(editBtn);
             tr.appendChild(td1);
             tr.appendChild(td2);
             tr.appendChild(td3);
             tr.appendChild(td4);
             tr.appendChild(td5);
-            tr.appendChild(deleteBtn);
-            tr.appendChild(editBtn);
+            tr.appendChild(td6);
+            tr.appendChild(td7);
             tbody.appendChild(tr);
         }
         

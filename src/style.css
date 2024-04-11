@@ -2,10 +2,14 @@
     margin: 0;
 }
 
+body{
+    background-color: beige;
+}
+
 /* Design av Header */
 header {
     height: 80px;
-    background-color: rgb(119, 24, 24);
+    background-color: #805231;
     margin: 0;
     position: relative;
     padding: 0 1em;
@@ -23,7 +27,7 @@ header {
 
 /* Design av meny för mobilenheter, placeras till höger om skärmen */
 nav {
-    background-color: rgb(119, 24, 24);
+    background-color: #805231;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: absolute;
@@ -50,7 +54,7 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0 1em;
+    padding: 1em 1em;
 }
 
 nav li:hover {
@@ -63,7 +67,7 @@ nav li:hover {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    background-color: rgb(119, 24, 24);
+    background-color: #805231;
     border: white solid 2px;
     cursor: pointer;
 }
@@ -117,13 +121,102 @@ nav li:hover {
     top: -3px;
 }
 
-/* Main content */
+/* Table */
+table{
+    font-size: large;
+    width: 80%;
+    margin: 2vh auto;
+}
 
+th, td{
+    padding: 1em;
+    text-align: center;
+}
 
+thead{
+    background-color: #FFD700; 
+    color: #191919; 
+    font-weight: bold; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+tbody tr:hover {
+    background-color: rgb(250, 176, 149); 
+}
+#delBtn{
+    display: inline-block;
+    padding: 0.5em 0.5em; 
+    background-color: #cd5852; 
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+}
+
+#delBtn:hover {
+    background-color: #3a0d0d;
+}
+
+#editBtn, #add{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0074D9;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 1vh auto;
+}
+
+#editBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Error */
+#editError, #postErr, #printed{
+    font-size: 2em;
+    font-weight: bold;
+    width: fit-content;
+    margin: 2vh auto;
+    padding: 0.5rem;
+    color: #890000;
+}
+
+/* Form */
+form {
+    width: fit-content;
+    margin: 5vh auto; 
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: large;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
 /* Media querys */
-
-/* Större skärmas - gör menyn som inline */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 801px) {
     header {
         padding: 0 3em;
     }
@@ -156,5 +249,24 @@ nav li:hover {
     nav li {
         display: inline;
         padding: 1.2em 0;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    table{
+        /* font-size: small;  */
+    }
+    #head tr th{
+        font-size: 0.5em;
+        padding: 0.1rem;
+    }
+    #data tr td{
+        font-size: 0.7em;
+        padding: 0.1rem;
+    }
+
+    #delBtn, #editBtn{
+        font-size: 0.7em;
+        padding: 0.1rem;
     }
 }

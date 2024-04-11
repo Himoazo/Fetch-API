@@ -2,8 +2,12 @@
   margin: 0;
 }
 
+body {
+  background-color: beige;
+}
+
 header {
-  background-color: #771818;
+  background-color: #805231;
   justify-content: space-between;
   align-items: center;
   height: 80px;
@@ -21,7 +25,7 @@ header {
 }
 
 nav {
-  background-color: #771818;
+  background-color: #805231;
   width: 250px;
   height: 100vh;
   font-size: 1.4em;
@@ -47,7 +51,7 @@ nav li {
 
 nav a {
   color: #fff;
-  padding: 0 1em;
+  padding: 1em;
   text-decoration: none;
 }
 
@@ -58,7 +62,7 @@ nav li:hover {
 
 .menu-btn {
   cursor: pointer;
-  background-color: #771818;
+  background-color: #805231;
   border: 2px solid #fff;
   align-items: center;
   padding: 8px 15px;
@@ -110,7 +114,101 @@ nav li:hover {
   transform: rotate(135deg);
 }
 
-@media only screen and (width >= 992px) {
+table {
+  width: 80%;
+  margin: 2vh auto;
+  font-size: large;
+}
+
+th, td {
+  text-align: center;
+  padding: 1em;
+}
+
+thead {
+  color: #191919;
+  background-color: gold;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:hover {
+  background-color: #fab095;
+}
+
+#delBtn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #cd5852;
+  border: none;
+  border-radius: .5rem;
+  padding: .5em;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: inline-block;
+}
+
+#delBtn:hover {
+  background-color: #3a0d0d;
+}
+
+#editBtn, #add {
+  color: #fff;
+  cursor: pointer;
+  background-color: #0074d9;
+  border: none;
+  border-radius: .25rem;
+  width: 100%;
+  margin: 1vh auto;
+  padding: .5rem;
+  transition: background-color .2s;
+}
+
+#editBtn:hover {
+  background-color: #0056b3;
+}
+
+#editError, #postErr, #printed {
+  color: #890000;
+  width: fit-content;
+  margin: 2vh auto;
+  padding: .5rem;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+form {
+  background-color: #f9f9f9;
+  border-radius: .5rem;
+  width: fit-content;
+  margin: 5vh auto;
+  padding: 1rem;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+label {
+  font-size: large;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+@media only screen and (width >= 801px) {
   header {
     padding: 0 3em;
   }
@@ -143,6 +241,18 @@ nav li:hover {
   nav li {
     padding: 1.2em 0;
     display: inline;
+  }
+}
+
+@media only screen and (width <= 800px) {
+  #head tr th {
+    padding: .1rem;
+    font-size: .5em;
+  }
+
+  #data tr td, #delBtn, #editBtn {
+    padding: .1rem;
+    font-size: .7em;
   }
 }
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
