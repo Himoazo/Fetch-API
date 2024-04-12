@@ -1,5 +1,5 @@
 "use strict";
-const url = "http://localhost:3000/api/" //API url
+const url = "https://api-production-b4dc.up.railway.app/api/" //API url
 
 fetchData();
 // Hämta lagrad data från db . GET
@@ -78,7 +78,7 @@ async function deleteEntry(id){
 
     if(confirm){
         try {
-                const response = await fetch(`http://localhost:3000/api/workexp/${id}`, {method: 'DELETE'});
+                const response = await fetch(`https://api-production-b4dc.up.railway.app/api/workexp/${id}`, {method: 'DELETE'});
                 
             } catch (error) {
                 console.error('Fetch error:', error);
@@ -117,7 +117,7 @@ function editEntry(id){
 async function putData(expEdit, id){
     let error;
     try {
-        const response = await fetch(`http://localhost:3000/api/workexp/${id}`, {
+        const response = await fetch(`https://api-production-b4dc.up.railway.app/api/workexp/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

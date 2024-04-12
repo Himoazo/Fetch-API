@@ -1,5 +1,5 @@
 "use strict"
-const url = "http://localhost:3000/api/" //API url
+const url = "https://api-production-b4dc.up.railway.app/api/" //API url
 const addBtn = document.getElementById("add");
 //Event listener för lägg till knappen
 addBtn.addEventListener("click", (event)=>{
