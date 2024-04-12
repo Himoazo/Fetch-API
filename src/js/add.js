@@ -1,6 +1,7 @@
 "use strict"
-const url = "http://localhost:3000/api/"
+const url = "http://localhost:3000/api/" //API url
 const addBtn = document.getElementById("add");
+//Event listener för lägg till knappen
 addBtn.addEventListener("click", (event)=>{
     event.preventDefault();
     const company = document.getElementById("coName");
@@ -8,7 +9,7 @@ addBtn.addEventListener("click", (event)=>{
     const jobLocation = document.getElementById("location");
     const startDate = document.getElementById("startDate");
     const endDate = document.getElementById("slutDatum");
-
+    // Läser in form data
     let companyname = company.value;
     let jobtitle = jobTitle.value;
     let location = jobLocation.value;
@@ -17,6 +18,7 @@ addBtn.addEventListener("click", (event)=>{
     
     if(companyname && jobtitle && location && startdate){
         postData(companyname, jobtitle, location, startdate, enddate);
+        //Töm formulär
         company.value = "";
         jobTitle.value = "";
         jobLocation.value = "";
@@ -27,6 +29,7 @@ addBtn.addEventListener("click", (event)=>{
     }
 });
 
+// POST request, för att lagra data i db
 async function postData(companyname, jobtitle, location, startdate, enddate){
 
     let exp = {
@@ -46,7 +49,6 @@ async function postData(companyname, jobtitle, location, startdate, enddate){
             },
             body: JSON.stringify(exp)
         });
-        const data = await response.json();
         
     } catch (err) {
         error = err;

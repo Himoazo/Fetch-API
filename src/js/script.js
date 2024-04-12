@@ -1,13 +1,15 @@
 "use strict";
-const url = "http://localhost:3000/api/"
-fetchData();
+const url = "http://localhost:3000/api/" //API url
 
+fetchData();
+// Hämta lagrad data från db . GET
 async function fetchData() {
     const tbody = document.getElementById("data");
     try {
         const response = await fetch(url);
         const data = await response.json();
         const experience = data.db;
+        //Loop genom inhämtad data och skapa tr för varje entry med tillhörande tds
         for(let entry of experience){
             let id = entry.id;
             const tr = document.createElement("tr");
@@ -27,9 +29,10 @@ async function fetchData() {
             const td4 = document.createElement("td");
             td4.classList.add(id);
             td4.contentEditable = true;
-            td4.textContent = new Date(entry.startdate).toLocaleDateString();
+            td4.textContent = new Date(entry.startdate).toLocaleDateString(); //Formatera date som kommer från sql
             const td5 = document.createElement("td");
             td5.classList.add(id);
+            // Visa "pågående" om inget slutdatum angivit
             if(entry.enddate == "1899-11-29T23:00:00.000Z"){
                 td5.textContent = "Pågående";
             }else{
@@ -39,7 +42,8 @@ async function fetchData() {
             const deleteBtn = document.createElement("button");
             deleteBtn.id = "delBtn";
             deleteBtn.textContent = "Delete";
-            deleteBtn.addEventListener("click", ()=>{
+            //Event for Delete knappen
+            deleteBtn.addEventListener("click", ()=>{ 
                 deleteEntry(id);
             });
             const td6 = document.createElement("td");
@@ -47,6 +51,7 @@ async function fetchData() {
             const editBtn = document.createElement("button");
             editBtn.id = "editBtn";
             editBtn.textContent = "Edit";
+            //Event for edit knappen
             editBtn.addEventListener("click", ()=>{
                 editEntry(id);
             });
@@ -67,14 +72,13 @@ async function fetchData() {
     }
 } 
 
-
+// funktion för att ta bort en rad från db vid viss id- DELETE request
 async function deleteEntry(id){
     const confirm = window.confirm("Är du säker att du vill ta bort denna arbetserfarenhet?");
 
     if(confirm){
         try {
                 const response = await fetch(`http://localhost:3000/api/workexp/${id}`, {method: 'DELETE'});
-                const data = await response.json();
                 
             } catch (error) {
                 console.error('Fetch error:', error);
@@ -85,7 +89,7 @@ async function deleteEntry(id){
         console.log("avbruten borttagning");
     }   
 }
-
+// Triggas vid klick på edit knappen
 function editEntry(id){
     let tdATA = document.getElementsByClassName(id);
 
@@ -109,7 +113,7 @@ function editEntry(id){
     }
     
 }
-
+// PUT request, redigerar data in en rad i db
 async function putData(expEdit, id){
     let error;
     try {
@@ -120,7 +124,6 @@ async function putData(expEdit, id){
             },
             body: JSON.stringify(expEdit)
         });
-        const data = await response.json();
         
     } catch (error) {
         error = err;
