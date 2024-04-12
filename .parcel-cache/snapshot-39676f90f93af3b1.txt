@@ -23,7 +23,7 @@
 98C:\Users\the_v\Desktop\Fetch API\node_modules\css-select\lib\esm\pseudo-selectors\filters.d.ts.map133573394461982327 0
 128C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeAttributesBySelector.js133573394462152304 0
 81C:\Users\the_v\Desktop\Fetch API\node_modules\utility-types\dist\utility-types.js133573394458302313 0
-48C:\Users\the_v\Desktop\Fetch API\dist\index.html133573904715348317 0
+48C:\Users\the_v\Desktop\Fetch API\dist\index.html133573936794131420 0
 74C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\packager-raw\LICENSE133573394456502303 0
 80C:\Users\the_v\Desktop\Fetch API\node_modules\type-fest\ts41\delimiter-case.d.ts133573394459482329 0
 55C:\Users\the_v\Desktop\Fetch API\node_modules\csso\dist133573394464192306 1
@@ -38,7 +38,7 @@
 71C:\Users\the_v\Desktop\Fetch API\node_modules\semver\functions\patch.js133573394461542308 0
 70C:\Users\the_v\Desktop\Fetch API\node_modules\js-yaml\lib\exception.js133573394459052318 0
 92C:\Users\the_v\Desktop\Fetch API\node_modules\@swc\helpers\_\_class_private_field_loose_base133573394466232321 1
-46C:\Users\the_v\Desktop\Fetch API\dist\add.html133573904984751158 0
+46C:\Users\the_v\Desktop\Fetch API\dist\add.html133573936794287638 0
 77C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\core\lib\BundleGraph.js133573394462162327 0
 77C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\plugin\src\PluginAPI.js133573394457432326 0
 58C:\Users\the_v\Desktop\Fetch API\node_modules\lmdb\keys.js133573394464862305 0
@@ -58,7 +58,7 @@
 100C:\Users\the_v\Desktop\Fetch API\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133573394458232317 0
 68C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\diagnostic\src133573394457362316 1
 86C:\Users\the_v\Desktop\Fetch API\node_modules\csso\node_modules\css-tree\lib\tokenizer133573394466632327 1
-37C:\Users\the_v\Desktop\Fetch API\dist133573905668444846 1
+37C:\Users\the_v\Desktop\Fetch API\dist133573959340743009 1
 121C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\svgo\css-select-adapter.js133573394461102316 0
 86C:\Users\the_v\Desktop\Fetch API\node_modules\csso\node_modules\css-tree\lib\generator133573394466522327 1
 92C:\Users\the_v\Desktop\Fetch API\node_modules\caniuse-lite\data\features\childnode-remove.js133573394464292329 0
@@ -143,7 +143,7 @@
 103C:\Users\the_v\Desktop\Fetch API\node_modules\dom-serializer\node_modules\entities\lib\maps\legacy.json133573394458982307 0
 73C:\Users\the_v\Desktop\Fetch API\node_modules\source-map-js\lib\base64.js133573394457672299 0
 78C:\Users\the_v\Desktop\Fetch API\node_modules\css-select\node_modules\domutils133573394462502300 1
-46C:\Users\the_v\Desktop\Fetch API\src\js\add.js133573505039603198 0
+46C:\Users\the_v\Desktop\Fetch API\src\js\add.js133573959340420948 0
 80C:\Users\the_v\Desktop\Fetch API\node_modules\type-fest\source\set-required.d.ts133573394461672296 0
 76C:\Users\the_v\Desktop\Fetch API\node_modules\css-tree\cjs\parser\create.cjs133573394461052330 0
 101C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\core\test\fixtures\invalid-engines\package.json133573394466102314 0
@@ -158,7 +158,7 @@
 50C:\Users\the_v\Desktop\Fetch API\node_modules\@swc133573394729470245 1
 68C:\Users\the_v\Desktop\Fetch API\node_modules\entities\lib\decode.js133573394458552303 0
 72C:\Users\the_v\Desktop\Fetch API\node_modules\color-convert\package.json133573394456452314 0
-49C:\Users\the_v\Desktop\Fetch API\src\js\script.js133573465736468335 0
+49C:\Users\the_v\Desktop\Fetch API\src\js\script.js133573949734865156 0
 47C:\Users\the_v\Desktop\Fetch API\src\js\menu.js133573385075538926 0
 106C:\Users\the_v\Desktop\Fetch API\node_modules\css-select\node_modules\domutils\lib\esm\manipulation.js.map133573394461852306 0
 132C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeNonInheritableGroupAttrs.js133573394462742305 0
@@ -778,7 +778,7 @@
 75C:\Users\the_v\Desktop\Fetch API\node_modules\update-browserslist-db\cli.js133573394457202305 0
 79C:\Users\the_v\Desktop\Fetch API\node_modules\update-browserslist-db\index.d.ts133573394458732318 0
 78C:\Users\the_v\Desktop\Fetch API\node_modules\svgo\plugins\removeEmptyAttrs.js133573394463332306 0
-59C:\Users\the_v\Desktop\Fetch API\dist\index.e82f28a0.js.map133573892321300811 0
+59C:\Users\the_v\Desktop\Fetch API\dist\index.e82f28a0.js.map133573949735285223 0
 68C:\Users\the_v\Desktop\Fetch API\node_modules\picomatch\CHANGELOG.md133573394459122304 0
 68C:\Users\the_v\Desktop\Fetch API\node_modules\term-size\vendor\macos133573394457682305 1
 90C:\Users\the_v\Desktop\Fetch API\node_modules\css-select\lib\pseudo-selectors\index.js.map133573394462672309 0
@@ -1283,7 +1283,7 @@
 94C:\Users\the_v\Desktop\Fetch API\node_modules\caniuse-lite\data\features\css-letter-spacing.js133573394465852313 0
 75C:\Users\the_v\Desktop\Fetch API\node_modules\htmlnano\docs\babel.config.js133573394461572320 0
 66C:\Users\the_v\Desktop\Fetch API\node_modules\@swc\helpers\_\index133573394467222322 1
-57C:\Users\the_v\Desktop\Fetch API\dist\add.70a0a01c.js.map133573892321414260 0
+57C:\Users\the_v\Desktop\Fetch API\dist\add.70a0a01c.js.map133573959340732794 0
 77C:\Users\the_v\Desktop\Fetch API\node_modules\caniuse-lite\data\regions\PF.js133573394469342334 0
 69C:\Users\the_v\Desktop\Fetch API\node_modules\source-map-js\README.md133573394459992315 0
 94C:\Users\the_v\Desktop\Fetch API\node_modules\electron-to-chromium\full-chromium-versions.json133573394459222330 0
@@ -1709,7 +1709,7 @@
 81C:\Users\the_v\Desktop\Fetch API\node_modules\node-releases\data\release-schedule133573394458022301 1
 85C:\Users\the_v\Desktop\Fetch API\node_modules\node-gyp-build-optional-packages\bin.js133573394456822307 0
 95C:\Users\the_v\Desktop\Fetch API\node_modules\@swc\helpers\src\_is_native_reflect_construct.mjs133573394467632306 0
-55C:\Users\the_v\Desktop\Fetch API\dist\index.e82f28a0.js133573892321300811 0
+55C:\Users\the_v\Desktop\Fetch API\dist\index.e82f28a0.js133573949735264032 0
 92C:\Users\the_v\Desktop\Fetch API\node_modules\node-gyp-build-optional-packages\build-test.js133573394457232319 0
 79C:\Users\the_v\Desktop\Fetch API\node_modules\caniuse-lite\data\features\wav.js133573394470642345 0
 87C:\Users\the_v\Desktop\Fetch API\node_modules\node-gyp-build-optional-packages\index.js133573394457582304 0
@@ -4124,7 +4124,7 @@
 84C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\events\test\Disposable.test.js133573394457912301 0
 83C:\Users\the_v\Desktop\Fetch API\node_modules\caniuse-lite\data\features\details.js133573394466842302 0
 65C:\Users\the_v\Desktop\Fetch API\node_modules\ansi-styles\license133573394456452314 0
-48C:\Users\the_v\Desktop\Fetch API\dist\about.html133573905668414626 0
+48C:\Users\the_v\Desktop\Fetch API\dist\about.html133573936794600192 0
 137C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts.map133573394461022308 0
 107C:\Users\the_v\Desktop\Fetch API\node_modules\@parcel\workers\test\integration\workerfarm\reverse-handle.js133573394461682327 0
 92C:\Users\the_v\Desktop\Fetch API\node_modules\caniuse-lite\data\features\devicepixelratio.js133573394466852315 0
@@ -5860,8 +5860,8 @@
 59C:\Users\the_v\Desktop\Fetch API\node_modules\.bin\svgo.cmd133573394471982355 0
 73C:\Users\the_v\Desktop\Fetch API\node_modules\.bin\update-browserslist-db133573394471972360 0
 59C:\Users\the_v\Desktop\Fetch API\dist\about.66c49646.js.map133573416151791498 0
-53C:\Users\the_v\Desktop\Fetch API\dist\add.70a0a01c.js133573892321414260 0
-55C:\Users\the_v\Desktop\Fetch API\dist\index.66c49646.js133573892321300811 0
-59C:\Users\the_v\Desktop\Fetch API\dist\index.66c49646.js.map133573892321414260 0
-56C:\Users\the_v\Desktop\Fetch API\dist\index.2cdaf7bc.css133573904118156708 0
-60C:\Users\the_v\Desktop\Fetch API\dist\index.2cdaf7bc.css.map133573904118188631 0
+55C:\Users\the_v\Desktop\Fetch API\dist\index.66c49646.js133573936793975148 0
+59C:\Users\the_v\Desktop\Fetch API\dist\index.66c49646.js.map133573936793975148 0
+56C:\Users\the_v\Desktop\Fetch API\dist\index.2cdaf7bc.css133573936794443912 0
+60C:\Users\the_v\Desktop\Fetch API\dist\index.2cdaf7bc.css.map133573936794443912 0
+53C:\Users\the_v\Desktop\Fetch API\dist\add.70a0a01c.js133573959340705392 0

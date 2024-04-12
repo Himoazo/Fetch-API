@@ -96,9 +96,14 @@ function editEntry(id){
         startdate: tdATA[3].textContent,
         enddate: tdATA[4].textContent
     }
-
+    const confirm = window.confirm("Är du säker att du vill ändra uppgifter i en arbetserfarenhet?");
     if (expEdit.companyname && expEdit.jobtitle && expEdit.location && expEdit.startdate){
-        putData(expEdit, id);
+        if(confirm){
+            putData(expEdit, id);
+        }else{
+            return;
+        }
+        
     }else{
         document.getElementById("editError").textContent = "Vänligen fyll i alla obligatoriska fällt";
     }

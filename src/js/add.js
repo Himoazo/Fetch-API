@@ -1,5 +1,5 @@
 "use strict"
-
+const url = "http://localhost:3000/api/"
 const addBtn = document.getElementById("add");
 addBtn.addEventListener("click", (event)=>{
     event.preventDefault();
@@ -17,6 +17,11 @@ addBtn.addEventListener("click", (event)=>{
     
     if(companyname && jobtitle && location && startdate){
         postData(companyname, jobtitle, location, startdate, enddate);
+        company.value = "";
+        jobTitle.value = "";
+        jobLocation.value = "";
+        startDate.value = "";
+        endDate.value = "";
     }else{
         document.getElementById("printed").textContent = "Alla fält markerade med '*' måste fyllas i"
     }
@@ -43,10 +48,10 @@ async function postData(companyname, jobtitle, location, startdate, enddate){
         });
         const data = await response.json();
         
-    } catch (error) {
+    } catch (err) {
         error = err;
         console.error('Fetch error:', error);
-        document.getElementById("postErr").textContent = "Det gick inte att lägga till pga: " + error;
+        document.getElementById("postErr").textContent = "Det gick inte att lägga till pga: " + error.message;
     }finally{
         if(!error){
             document.getElementById("printed").textContent = "En arbetserfarenhet har laggts till och kan synas på startsidan"
