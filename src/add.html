@@ -6,7 +6,7 @@
     <script type="module" src="js/add.js"></script>
     <script type="module" src="js/menu.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Lägg till</title>
 </head>
 <body>
     <header>
@@ -37,7 +37,8 @@
             </ul>
         </nav>
     </header>
-
+    <main>
+        <h1 class="h1" >Lägg till arbetserfarenhet:</h1>
     <form> <!-- method="post" action="/" -->
         <label for="coName">*Företagetsnamn:</label>
         <input type="text" id="coName" placeholder="Företagetsnamn">
@@ -46,12 +47,16 @@
         <label for="location">*Plats:</label>
         <input type="text" id="location" placeholder="Plats">
         <label for="startDate">*Startdatum:</label>
-        <input type="date" id="startDate" placeholder="Startdatum">
+        <input type="date" id="startDate">
         <label for="slutDatum">SlutDatum:</label>
-        <input type="date" id="slutDatum" placeholder="slutDatum">
+        <input type="date" id="slutDatum">
         <button id="add">Lägg till</button>
     </form>
     <div id="printed"></div>
     <div id="postErr"></div>
+    </main>
+    <footer>
+        <p>Backend-baserad webbutveckling</p>
+    </footer>
 </body>
 </html>

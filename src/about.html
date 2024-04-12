@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="js/menu.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Om webbplatsen</title>
 </head>
 <body>
     <header>
@@ -37,6 +37,23 @@
         </nav>
     </header>
 
-    
+    <main>
+        <h1 class="h1">Om webbplatsen</h1>
+        <article>
+            <h2>I denna webbplats: </h2>
+            <p>
+             erbjuds det möjligheten av att lagra och visa besökarnas arbetserfarenheter. I ”Lägg till erfarenhet” sidan kan man fylla i formuläret med uppgifter om en arbetserfarenhet. Uppgifterna lagras då i databasen. På landningssidan visas det alla lagrade arbetserfarenheter som finns i databasen.
+            </p>
+            <p>
+                Webbplatsen använder en REST API där GET anrop till API:t hämtar alla lagrade uppgifter från databasen, POST anrop skickar in uppgifter att lagra i databasen, DELETE anrop med specifikt ID raderar en rad i databasen och PUT anrop uppdaterar en viss rad i databasen med ett angivet ID. 
+            </p>
+            <p>
+                Databasen heter (mysqlcv) och är byggd på MYSQL DBMS, har en tabell (workexperience) som i sin tur innehåller 5 kolumner (ID, companyname, jobtitle, location, startdate och enddate). ID är ett numeriskt värde som generas per automatik av databasen. Companyname, jobtitle och location är textsträngar, startdate och enddate är datumobjekt. Samtliga kolumner måste innehålla något värde dvs inte får vara NULL förutom enddate då det kan vara så att man vill registrera info om ett pågående jobb. 
+            </p>
+            <p>
+                Att bygga upp ett API och använda det för att kommunicera med klienten erbjuder betydligt mycket mer flexibilitet än att rendera html data från servern och hantera json data i html med ejs. På det sättet, med API, servern hanterar data och kommunikation med databasen och skickar resultatet med API till klienten, där med hjälp av javascript kan json data bearbetas, struktureras och dynamiskt visas i klientens html sidorna. 
+            </p>
+        </article>
+    </main>
 </body>
 </html>
