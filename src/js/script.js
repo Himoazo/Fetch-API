@@ -40,7 +40,7 @@ async function fetchData() {
             }
             td5.contentEditable = true;
             const deleteBtn = document.createElement("button");
-            deleteBtn.id = "delBtn";
+            deleteBtn.classList.add("delBtn"); 
             deleteBtn.textContent = "Delete";
             //Event for Delete knappen
             deleteBtn.addEventListener("click", ()=>{ 
