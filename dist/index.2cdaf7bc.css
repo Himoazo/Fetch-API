@@ -164,7 +164,7 @@ tbody tr:hover {
   background-color: #3a0d0d;
 }
 
-#editBtn, #add {
+.editBtn, #add {
   color: #fff;
   cursor: pointer;
   background-color: #0074d9;
@@ -176,7 +176,7 @@ tbody tr:hover {
   transition: background-color .2s;
 }
 
-#editBtn:hover {
+.editBtn:hover {
   background-color: #0056b3;
 }
 
@@ -291,7 +291,7 @@ footer p {
     font-size: .5em;
   }
 
-  #data tr td, .delBtn, #editBtn {
+  #data tr td, .delBtn, .editBtn {
     padding: .1rem;
     font-size: .7em;
   }

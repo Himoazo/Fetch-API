@@ -169,7 +169,7 @@ tbody tr:hover {
     background-color: #3a0d0d;
 }
 
-#editBtn, #add{
+.editBtn, #add{
     width: 100%;
     padding: 0.5rem;
     background-color: #0074D9;
@@ -181,7 +181,7 @@ tbody tr:hover {
     margin: 1vh auto;
 }
 
-#editBtn:hover {
+.editBtn:hover {
     background-color: #0056b3;
 }
 
@@ -299,7 +299,7 @@ footer p {
         padding: 0.1rem;
     }
 
-    .delBtn, #editBtn{
+    .delBtn, .editBtn{
         font-size: 0.7em;
         padding: 0.1rem;
     }

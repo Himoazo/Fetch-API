@@ -49,7 +49,7 @@ async function fetchData() {
             const td6 = document.createElement("td");
             td6.appendChild(deleteBtn);
             const editBtn = document.createElement("button");
-            editBtn.id = "editBtn";
+            editBtn.classList.add("editBtn");
             editBtn.textContent = "Edit";
             //Event for edit knappen
             editBtn.addEventListener("click", ()=>{
