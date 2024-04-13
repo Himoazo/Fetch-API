@@ -26,4 +26,4 @@ function toggleMenu() {
 
 //Ändrar margin top på footer så att det blir hela scroll längden
 const contentHeight = document.documentElement.scrollHeight;
-document.querySelector('footer').style.setProperty('--pageHeight', `${contentHeight}px`);
+document.querySelector('.footer').style.setProperty('--pageHeight', `${contentHeight}px`);

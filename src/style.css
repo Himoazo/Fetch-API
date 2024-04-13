@@ -236,7 +236,6 @@ article {
 }
 /* footer */
 footer{
-    margin-top: var(--pageHeight);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -247,6 +246,10 @@ footer{
         color: white;
         font-size: 1.5rem;
     }
+}
+
+.footer{
+    margin-top: var(--pageHeight);
 }
 
 /* Media querys */
