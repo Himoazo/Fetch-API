@@ -6,3 +6,5 @@ På ”lägg till erfarenhet” sida finns det ett formulär som man kan fylla i
 På startsidan som redan nämnt visas alla lagrade arbetserfarenheter med möjligheten till att radera och redigera.
 
 **Obs.** om klientens webbläsares språk är (en: us) så förekommer det problem med att redigera lagrade erfarenheter pga date format som webbplatsen i sådana fall anpassar och som i sin tur krockar med mysql date format. Lösningen i detta fall är att radera raden och lagrar den på nytt med rätt information. Är webbläsarens språk svenska då är det inga problem att redigera.
+
+Den poubliserade webbplatsen finns [här](https://fetchownapi.netlify.app/).
