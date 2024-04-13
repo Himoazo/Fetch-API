@@ -33,7 +33,7 @@ async function fetchData() {
             const td5 = document.createElement("td");
             td5.classList.add(id);
             // Visa "pågående" om inget slutdatum angivit
-            if(entry.enddate == "1899-11-29T23:00:00.000Z"){
+            if(entry.enddate == null){
                 td5.textContent = "Pågående";
             }else{
                 td5.textContent = new Date(entry.enddate).toLocaleDateString();
