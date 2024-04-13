@@ -40,8 +40,6 @@ async function postData(companyname, jobtitle, location, startdate, enddate){
         enddate: enddate
     }
 
-    console.log(JSON.stringify(exp));
-
     let error;
     try {
         const response = await fetch(url, {
