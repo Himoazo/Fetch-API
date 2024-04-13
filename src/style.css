@@ -236,6 +236,7 @@ article {
 }
 /* footer */
 footer{
+    margin-top: var(--pageHeight);
     position: absolute;
     bottom: 0;
     width: 100%;
